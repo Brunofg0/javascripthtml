@@ -14,7 +14,7 @@ function funcao() {
     var somaSalario = 0;
     var somaFilhos = 0;
     var maiorSalario = vet[0].salario;
-    var qtd = 0;
+    var qtde = 0;
     for (var i=0; i<vet.lenght; i++){
        somaSalario = somaSalario + vet[i].salario
        somaFilhos = somaFilhos + vet[i].filhos
@@ -22,11 +22,11 @@ function funcao() {
            maiorSalario = vet[i].salario
        }
        if ((vet[i].sexo == "F") && (vet[i].salario > 1000)){
-            qtd++;
+            qtde++
        }
     }
 }
 alert("Media: " + somaSalario/vet.lenght +
  "\nFilhos: " + somaFilhos/vet.lenght + 
  "\nMaior salario: " + maiorSalario + 
- "\nPorcentagem de mulheres com salario maior que R$ 1000: " + qtd/3*100)
+ "\nPorcentagem de mulheres com salario maior que R$ 1000: " + qtde/3*100)
